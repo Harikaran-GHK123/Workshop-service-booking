@@ -24,9 +24,6 @@ A hyperlocal web application for booking bike/scooter service appointments from 
 - 📡 Firebase Firestore for booking storage
 - 📩 Email confirmation (optional with extension)
 
----
-
-## 📁 Folder Structure (Angular)
 
 
 ---

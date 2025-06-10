@@ -1,0 +1,165 @@
+.book_serv_con {
+
+    padding: 0;
+    background-image: url("../../../assets/shopImages/sliderimages2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .sticky_div {
+        position: relative;
+
+        .service_main_r1 {
+            .service_c1 {
+                background-color: var(--primary-color);
+                height: 150px;
+            }
+
+            .service_c2 {
+                background-color: var(--primary-color);
+                height: 400px;
+                width: 400px;
+                margin-top: -76px;
+                margin-left: 60px;
+                border-radius: 60px;
+                position: sticky;
+                top: 130px;
+                overflow: hidden;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .service_c3 {
+                margin-top: -305px;
+            }
+        }
+
+    }
+
+    .whole_container {
+        background-color: var(--primary-color);
+
+        .book_serv_r1 {
+            background-color: var(--primary-color);
+            margin: 20px 10px 0px 20px;
+
+
+            .book_serv_c1 {
+                margin-top: 50px;
+
+                .inner_book_rlh {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: var(--prymary-smoke-color);
+                    margin: 10px;
+                    border-radius: 35px;
+                    font-size: 18px;
+                    width: 90%;
+                    height: 100%;
+                    overflow: hidden;
+
+
+                    img {
+                        margin: 10px 0px 10px 0px;
+                        width: 480px;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                    }
+
+                    .sml_book {
+                        width: 450px;
+                        padding: 20px 0px;
+                    }
+
+                    .para_book {
+                        width: 450px;
+                        padding: 20px 0px;
+                    }
+                }
+            }
+
+            .book_serv_c2 {
+                background-color: var(--bg-black);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+                padding: 0;
+                border-radius: 10px;
+
+                .inner_forms {
+
+                    .contact_form {
+
+                        color: var(--primary-color);
+                        padding: 15px;
+                        border-radius: 20px;
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-style: normal;
+                        width: 89%;
+                        height: 100%;
+                        margin-left: 30px;
+
+
+                        .form_headinng {
+                            padding: 20px 0px;
+                            font-size: 28px;
+
+                        }
+
+                        .form_r1 {
+                            .form_co1 {}
+
+                            .form-label {}
+
+                            .form-control {
+                                border: none;
+                                border-radius: 18px;
+                                background-color: var(--bg-rgcl);
+                                color: var(--primary-color);
+
+                            }
+
+                            .error {
+                                font-size: 10px;
+                                color: var(--text-color);
+                                text-align: center;
+
+                            }
+
+                        }
+
+                        .form_btn {
+                            background-color: var(--bs-orange);
+                            color: var(--bg-black);
+                            font-size: 18px;
+                            border: none;
+                            margin: 20px 0px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+.error_msg {
+    margin-top: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

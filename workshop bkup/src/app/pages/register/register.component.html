@@ -1,0 +1,88 @@
+<section class="register_section">
+    <div class="register_container">
+        <div class=" register_ro1">
+            
+            <div class="register_co1">
+                <div class="any-rg">
+                    <img src="assets/images/company logo.jpeg" alt="">
+                </div>
+            </div>
+            
+            <div class="register_co2">
+
+                <form class=" contact_form " [formGroup]="registerform" (ngSubmit)="getFormvalues()">
+                    <div class="form_headinng">
+                        SING UP <br>
+                        please entre your details.
+                    </div>
+                    <div class=" form_r1">
+                        <div class=" form_co1">
+                            <label for="formfirstname" class="form-label">First name*</label>
+                            <input type="text" class="form-control" id="formfirstname" formControlName="first_name">
+                            <div class="error"  *ngIf="registerform.get('first_name')?.invalid && (registerform.get('first_name')?.touched || registerform.get('first_name')?.dirty)">
+                                Enter your first name
+                            </div>
+                        </div>
+                        <div class="form_co1">
+                            <label for="formlastname" class="form-label">Last name*</label>
+                            <input type="text" class="form-control" id="formlastname" formControlName="last_name">
+                            <div class="error"  *ngIf="registerform.get('last_name')?.invalid && (registerform.get('last_name')?.touched || registerform.get('last_name')?.dirty)">
+                                Enter your last name
+                            </div>
+                        </div>
+    
+                        <div class=" form_co1">
+                            <label for="formemail" class="form-label">Email*</label>
+                            <input type="text" class="form-control" id="formemail" formControlName="email">
+                            <div class="error"  *ngIf="registerform.get('email')?.invalid && (registerform.get('email')?.touched || registerform.get('email')?.dirty)">
+                                Enter your valid email
+                            </div>
+    
+    
+    
+                        </div>
+    
+                        <div class="form_co1">
+                            <label for="formmessage" class="form-label" >Password*</label>
+                            <input type="password" class="form-control" id="formmessage" formControlName="password" placeholder="atleast 8 digits">
+                            <div class="error" *ngIf="registerform.get('password')?.invalid && (registerform.get('password')?.touched || registerform.get('password')?.dirty)">
+                                Enter your vaild password
+                            </div>
+                        </div>
+                        <div class="sub_btn_div">
+                            <button type="submit" data-bs-toggle="modal" data-bs-target="#seccessregisterform" [disabled]="registerform.invalid" class="btn btn-primary w-50 m-auto form_btn " >Submit</button>
+                        </div>
+                    </div>
+    
+    
+                </form>
+
+
+            </div>
+        
+        </div>
+    </div>
+</section>
+
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="seccessregisterform" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">success</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          your account regeistered successfully
+        </div>
+        <div class="modal-footer">
+          
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" routerLink="/book-services" >OK</button>
+        </div>
+      </div>
+    </div>
+  </div>

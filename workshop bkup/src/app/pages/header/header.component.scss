@@ -1,0 +1,142 @@
+.ws_header{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+   
+}
+@media (min-width: 992px)
+{
+    .ws_header{
+       
+        background-color: var(--bs-body-bg);
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 5;
+        
+        
+        .nav_container{
+            padding: 20px;
+            color: var(--primary-color);
+           .nav_card{
+            .navbar_brand{
+                
+
+                img{
+                    width: 70px;
+                    height: 50px;
+                    object-fit: contain;
+                    cursor: pointer;
+                }
+            }
+                .menu_section{
+                
+                    justify-content: flex-end;
+                    font-size: 18px;
+                    color: var(--primary-color);
+                    background-color:var( --primary-color) ;
+                    margin-left: 400px;
+                    border-radius: 10px;
+        
+                    .navbar-nav{
+                        color: var(--primary-color);
+                        .nav-changes{
+                            
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            
+                        }
+                        .nav-item{
+                            padding: 0px 20px;
+
+                            .main_icons{
+                                display: flex;
+                                align-items: center;
+                                line-height: normal;
+                                
+
+                                .icons_svg{
+                                    img{
+                                        width: 25px;
+                                        height: 25px;
+                                    }
+                                }
+                                a{}
+                            }
+                        }
+                        
+                        .nav-item:hover{
+                            background-color: var(--primary-bg-color);
+                            border-radius: 20px;
+                            transition: 1s;
+                            cursor: pointer;
+                            
+                            
+                        }
+                        .nav-active{
+                            padding: 0px 20px;
+                            border-radius: 20px;
+                            background-color: var(--primary-bg-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px){
+    .ws_header{
+        
+        background-color: var(--bs-body-bg);
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 5;
+        
+        .nav_container{
+           
+           .nav_card{
+            .navbar_brand{
+                
+
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            }
+                .menu_section{
+                
+                    
+        
+                    .navbar-nav{
+                        
+                      
+                        .nav-item{
+                            
+
+                            .main_icons{
+                                display: flex;
+                                align-items: center;
+                                
+                                
+
+                                .icons_svg{
+                                    img{
+                                        width: 25px;
+                                        height: 25px;
+                                        margin: 0px 5px;
+                                    }
+                                }
+                                
+                            }
+                        }
+                        
+                        
+                    }
+                }
+            }
+        }
+    }

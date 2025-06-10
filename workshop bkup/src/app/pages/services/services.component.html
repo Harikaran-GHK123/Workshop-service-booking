@@ -1,0 +1,44 @@
+<div class="container-fluied banner_con">
+
+    <div class="row banner_r11">
+        <div class="col-12 banner_c1"></div>
+        <div class="col-12 banner_c2 p-0">
+            <img src="../../../assets/shopImages/sliderimages2.jpeg" alt="">
+        </div>
+        <div class="col-12 banner_c3"></div>
+    </div>
+
+
+</div>
+
+<!-- service main container -->
+<div class="serv_con_fluied">
+    <div class="container serv_container">
+        <div class="row serv_ro1">
+            <div class="w-100" *ngFor="let servdata of servicecollection">
+                <!-- left box -->
+                <div class="col-12 serv_c1 w-100">
+                    <!-- inner -->
+                    <div class="two_div p-3  w-100">
+
+                        <div class="first_div">
+                            <img [src]="servdata.image" alt="">
+                        </div>
+
+                        <div class="second_div  w-100">
+                            <div class="text mb-3 h1"> {{servdata.title}}</div>
+                            <div class="text_cont  w-100">
+                                {{servdata.description}}
+                            </div>
+                            <button class="btn btn-primary mt-3" [routerLink]="'/service-info/'+servdata.param" >Reed more</button>
+                        </div>
+                    </div>
+                    <!-- inner -->
+                </div>
+        
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- service main container -->

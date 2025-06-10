@@ -1,0 +1,106 @@
+.banner_con {
+    padding: 0;
+    background-image: url("../../../assets/shopImages/sliderimages1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .banner_r11 {
+        .banner_c1 {
+            background-color: var(--primary-color);
+            height: 150px;
+        }
+
+        .banner_c2 {
+            background-color: var(--primary-color);
+            height: 400px;
+            width: 400px;
+            margin-top: -76px;
+            margin-left: 60px;
+            border-radius: 60px;
+            position: sticky;
+            top: 125px;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .banner_c3 {
+            height: 400px;
+            width: 100%;
+            margin-top: -305px;
+        }
+    }
+}
+
+
+.serv_con_fluied {
+    background-color: var(--primary-color);
+
+    .serv_container {
+        background-color: var(--primary-color);
+
+        .serv_ro1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+
+            .serv_c1 {
+                width: 800px;
+                height: 370px;
+                background-color: var(--primary-bg-color);
+                margin: 20px 0px;
+                display: flex;
+                align-items: center;
+                border-radius: 16px;
+
+
+                .two_div {
+                    display: flex;
+
+                    .first_div {
+                        margin: 10px;
+
+                        img {
+                            width: 340px;
+                            height: 345px;
+                            border-radius: 20px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .second_div {
+                        color: var(--primary-color);
+                        font-size: 12pxpx;
+                        margin: 10px;
+                        overflow: hidden;
+                        .btn{
+                            font-size: 16px;
+                        }
+
+                        .text{
+                            color: #000;
+                            font-size: 22px;
+                        }
+
+                        .text_cont {
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 10;
+                            white-space: pre-wrap;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

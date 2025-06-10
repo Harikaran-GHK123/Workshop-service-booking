@@ -1,0 +1,274 @@
+<div class="main_home">
+    <!-- <img src="../../../assets/shopImages/bikewithowner.png" alt=""> -->
+    <div class="main_floath">
+        <div class="big_text">Miles of Smiles: Your Bike, Our Responsibility!</div>
+
+        <!-- <div class="small_text">The Very Best in Mobile Gaming</div>
+
+        <div class="two_images">
+            <img src="assets/images/Apple Store.webp" alt="">
+            <img src="assets/images/Google Play.webp" alt="">
+        </div> -->
+    </div>
+</div>
+
+
+<div class="four_images">
+
+    <div class="image_one"  [routerLink]="'/service-info/'+servicedata[0].param">
+        <img [src]="servicedata[0].image" alt="">
+        <div class="text_container">
+            <div class="text">{{servicedata[0].title}}</div>
+        </div>
+
+    </div>
+
+    <div class="image_two" [routerLink]="'/service-info/'+servicedata[1].param">
+
+        <img [src]="servicedata[1].image"alt="">
+        <div class="text_container">
+            <div class="text">{{servicedata[1].title}}</div>
+        </div>
+
+
+    </div>
+    <div class="image_three" [routerLink]="'/service-info/'+servicedata[2].param">
+
+        <img [src]="servicedata[2].image" alt="">
+        <div class="text_container">
+            <div class="text">{{servicedata[2].title}}</div>
+        </div>
+
+
+    </div>
+    <div class="image_four" routerLink="/services" >
+        <div class="text_container">
+            <div class="text">EXPLORE OUR <br> SERVICES</div>
+            <img src="assets/images/arrow.svg" alt="">
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="mid_text">
+    <div class="small_words">About shop</div>
+    <div class="bold_words">The Tools We Use For The Service</div>
+    <div class="para_text">We have the most advanced service tools available today,so our company service is more better for custemers</div>
+    <button>learn more</button>
+
+    <div class="two_images">
+        <img src="../../../assets/shopImages/homepagespanerbord.jpeg" alt="">
+        <div class="move_img">
+            <img src="../../../assets/shopImages/shopownerbgremove.png" alt="">
+        </div>
+    </div>
+
+    <div class="last_text">
+        <div class="last_big">OUR PREVIOUS SERVICES</div>
+        
+    </div>
+</div>
+
+
+
+
+<div class="home_mid_content">
+    <div class="mid_img">
+        <img src="../../../assets/shopImages/homepagemiddlebanner.jpeg" alt="">
+    </div>
+    <div class="flex_part1">
+        <div class="mid1">
+            <div class="img_text">
+                <img src="../../../assets/images/yhama.jpg" alt="">
+                <div class="rhl_text">YMAHA MT-15</div>
+            </div>
+            <div class="mid1_para">Smoke can be blue (indicating burning oil), white (suggesting coolant leak), or black
+                (pointing to rich fuel mixture). Each type of smoke indicates different issues.</div>
+          
+        </div>
+        <div class="mid2">
+            <div class="img_text">
+                <img src="../../../assets/images/royalbike.jpg" alt="">
+                <div class="rhl_text">ROYAL ENFILDE</div>
+            </div>
+            <div class="mid2_para">
+                Excessive engine vibration can indicate problems with the engine mounts, crankshaft, or balance shaft.
+            </div>
+            
+        </div>
+    </div>
+    <div class="flex_part2">
+        <div class="mid3">
+            <div class="img_text">
+                <img src="../../../assets/images/ktmimgae.avif" alt="">
+                <div class="rhl_text">KTM</div>
+            </div>
+            <div class="mid3_para">Excessive engine vibration can indicate problems with the engine mounts, crankshaft,
+                or balance shaft.
+            </div>
+            
+        </div>
+        <div class="mid4">
+            <img src="../../../assets/shopImages/bikewithowner.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+<div class="home_last">
+    <div class="home_last_lfttxt">
+        <div class="smltxt">Join Our Team</div>
+        <div class="bigtxt">
+            It takes the kallakuruchi best talented employees there.</div>
+
+        <div class="slider">
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../../../assets/shopImages/sliderimages1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../../../assets/shopImages/sliderimages2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../../assets/shopImages/sliderimages3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="explore_button">
+            <span>Explore now</span>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- form part -->
+
+<div class="container_fluied form_con">
+
+    <div class="row form_rohw">
+
+        <div class="col-12 form_colhm">
+            <div class="last_rlh">
+                <div class="small_txt">join our team</div>
+                <div class="big_txt"> It takes the kallakuruchi best talented employees there.</div>
+                <!-- <div class="exp_btn">Explore careers</div> -->
+            </div>
+        </div>
+    </div>
+    <section class="container form_container" id="contactUsForm">
+        <div class="row">
+            <form class="col-sm-5 col-12 contact_form " [formGroup]="contactform" (ngSubmit)="getFormvalues()">
+                <div class="form_headinng">
+                    contact Us <br>  Enter your Information  
+                   
+                </div>
+                <div class="row form_r1">
+                    <div class="mb-3 col-6 form_co1">
+                        <label for="formfirstname" class="form-label">first name*</label>
+                        <input type="text" class="form-control" id="formfirstname" formControlName="first_name">
+                        <div class="error"
+                            *ngIf="contactform.get('first_name')?.invalid && (contactform.get('first_name')?.touched || contactform.get('first_name')?.dirty)">
+                            Enter your first name
+                        </div>
+                    </div>
+                    <div class="mb-3 col-6 form_co1">
+                        <label for="formlastname" class="form-label">last name*</label>
+                        <input type="text" class="form-control" id="formlastname" formControlName="last_name">
+                        <div class="error"
+                            *ngIf="contactform.get('last_name')?.invalid && (contactform.get('last_name')?.touched || contactform.get('last_name')?.dirty)">
+                            Enter your last name
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 form_co1">
+                        <label for="formemail" class="form-label">Email*</label>
+                        <input type="text" class="form-control" id="formemail" formControlName="email">
+                        <div class="error"
+                            *ngIf="contactform.get('email')?.invalid && (contactform.get('email')?.touched || contactform.get('email')?.dirty)">
+                            Enter your valid email
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="mb-3 col-12 form_co1">
+                        <label for="formmessage" class="form-label">Message us*</label>
+                        <textarea class="form-control" id="formmessage" formControlName="messages"></textarea>
+                        <div class="error"
+                            *ngIf="contactform.get('messages')?.invalid && (contactform.get('messages')?.touched || contactform.get('messages')?.dirty)">
+                            Enter your messages
+                        </div>
+                    </div>
+
+
+
+                    <!-- Button trigger modal -->
+                    <button type="submit" class="btn btn-primary form_btn w-50" [disabled]="contactform.invalid"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        submit
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade pop_form" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog pop_dio">
+                            <div class="modal-content pop_cont">
+                                <div class="modal-header pop_head">
+                                    <h5 class="modal-title" id="exampleModalLabel">submited</h5>
+                                    <button type="button" class="btn-close pop_btn1" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body pop_body">
+                                    your submition is successfull
+                                </div>
+                                <div class="modal-footer pop_foot">
+                                    <button type="button" class="btn btn-secondary pop_button "
+                                        data-bs-dismiss="modal">Done</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pop -->
+
+                </div>
+
+
+            </form>
+        </div>
+
+    </section>
+
+    <div class="row sub_roh">
+        <div class="subcribe_div">
+            <div class="sub_text">Subscribe to Our Newsletter</div>
+            <div class="mail_main_div">
+                <div class="mail">email*</div>
+                <input type="email">
+            </div>
+            <div class="join_btn">
+                join
+            </div>
+        </div>
+    </div>
+
+</div>

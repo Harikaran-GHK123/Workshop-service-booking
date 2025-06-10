@@ -1,0 +1,115 @@
+<div class="container-fluied track_con">
+
+    <div class="sticky_div">
+
+        <div class="row service_main_r1">
+            <div class="col-12  service_c1"></div>
+            <div class="col-12  service_c2 p-0">
+                <img src="../../../assets/shopImages/electricalservice.jpeg" alt="">
+            </div>
+            <div class="col-12  service_c3">
+                <div class="service_img">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="track_order_section">
+
+    <div class="container track_sec_con1">
+
+        <div class="row fixed_div">
+
+
+            <div class="col-4 track_col1">
+
+                <div class="image">
+                    <img src="../../../assets/shopImages/wheelservice.jpeg" alt="">
+                </div>
+
+                <div class="track_para">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, magnam! Quod magni magnam eos
+                    tempora provident odio, nostrum vitae qui.
+                </div>
+
+
+
+
+
+            </div>
+
+            <div class="col-7 track_col2">
+                <!-- main track -->
+                <div class="row inner_track" *ngFor="let track of trackorder">
+
+                    <div class="col-12 inner_trk1">
+
+                        <div class="lft_img">
+                            <img [src]="track?.Upload" alt="">
+                        </div>
+
+                        <div class="rht_tb">
+                            <div class="title">{{track?.shortly}}</div>
+                            <div class="title1">Order id : {{track?.token}}</div>
+                            <div class="order">order placed</div>
+                            <div class="felx_bth">
+                                <div class="date">{{track?.date}}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 inner_trk2">
+                        <div class="three_div">
+                            <div class="first">
+                                <div class="dot"></div>
+                                <div class="flex_bth">
+                                    <div class="light">
+                                        official deliver details
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="first">
+                                <div class="dot1"></div>
+                                <div class="flex_bth">
+                                    <div class="light">
+                                        official deliver details
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chnges_div">
+                            <div class="first">
+                                <div class="dot2"></div>
+                                <div class="flex_bth">
+                                    <div class="light">
+                                        official deliver details
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        </div>
+                        <div class="dash">
+
+                        </div>
+
+                        <div class="track_last1">
+                            <div class="price_txt">PRICE</div>
+                            <div class="value">RS:</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- main track -->
+
+                
+            </div>
+
+        </div>

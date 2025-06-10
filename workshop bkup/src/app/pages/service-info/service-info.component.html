@@ -1,0 +1,80 @@
+<div class="container-fluid service_main_container" [ngStyle]="{'background-image':'url('+ serviceinfo.image +')'}">
+    <!-- service col one -->
+    <div class="sticky_div">
+       
+       <!-- <div class="stikiy_text">
+        Harikaran
+       </div> -->
+
+    <div class="row service_main_r1">
+        <div class="col-12  service_c1"></div>
+        <div class="col-12  service_c2"></div>
+        <div class="col-12  service_c3">
+            <div class="service_img">
+            
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- service col one -->
+
+    <!-- service col two -->
+    <div class="row service_main_r2">
+        <div class="col-12  service_c11 mt-5 h1">{{serviceinfo.title}}</div>
+        <div class="description m-5 h4 text-center">{{serviceinfo.description}}</div>
+        <div class="col-12  service_c22">
+            <!-- inner images -->
+        <div class="inner_both">
+            <div class="inner_image1" *ngFor="let infoimages of serviceinfo.infopage.image"  [ngStyle]="{'background-image':'url('+ infoimages +')'}"></div>
+            
+        </div>
+            <!-- inner images -->
+        </div>
+        <div class="col-12  service_c33">
+             <!-- inner letter -->
+            <div class="inner_letter">
+                <div class="inner_letter1">
+                    <div class="inner_layer1">
+                        <div class="layer2">
+                            <img src="assets/images/star.svg" alt="">
+                            <div class="layer3">
+                                Rating..
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+             <!-- inner letter -->
+        </div>
+        <div class="col-12  service_colum">
+            
+            <!-- three_boxes -->
+            <div class="three_boxes">
+                <div class="box1">
+                    <div class="para">I can't express how impressed I am with the service I received at XYZ Bike Service Center. From the moment I walked in, the staff was incredibly friendly and knowledgeable. They took the time to listen to my concerns about my bike and thoroughly explained the repairs it needed.</div>
+                    <div class="smltxt">Ajith (actor)</div>
+                </div>
+                
+                <div class="box1">
+                    <div class="para">The technicians demonstrated exceptional expertise. My bike was diagnosed and repaired faster than I anticipated, and the quality of work was outstanding. They even went the extra mile to clean my bike, making it look brand new.</div>
+                    <div class="smltxt">TTF vasan</div>
+                </div>
+                
+                <div class="box1">
+                    <div class="para">
+
+                        I highly recommend XYZ Bike Service Center to anyone in need of reliable and professional bike maintenance. I feel confident knowing I have a trustworthy service center to rely on for all my future biking needs. Kudos to the entire team for their exceptional service!”
+
+                    </div>
+                    <div class="smltxt">
+                        Valentino Rhose(racer)
+                    </div>
+                </div>
+            </div>
+            <!-- three_boxes -->
+        </div>
+    </div>
+
+    <!-- service col two -->
+</div>

@@ -1,0 +1,28 @@
+:root{
+    --text-color:red;
+    --bg-color:#6f6e73;
+    --primary-bg-color:#e11c0e;
+    --primary-color:white;
+    --prymary-smoke-color:#faf1d7;
+    --bg-service:#f5dd98;
+    --bg-Ypraimary:#f3d16c;
+    --bg-black:#0a0701db;
+    --bg-border:#c3c2c9;
+    --bg-rgcl: #5a5958db;
+    --bg-rgcolor:#d3cdd4;
+    --bg-input:#433e3e:
+    
+
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}

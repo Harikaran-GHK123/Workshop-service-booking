@@ -1,0 +1,136 @@
+.register_section {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: var(--bg-rgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .register_container {
+        width: 1200px;
+       
+        background-image: url("../../../assets/shopImages/registerpagebanner.jpeg");
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+
+        .register_ro1 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
+
+            .register_co1 {
+
+                width: 700px;
+                height: 543px;
+                // width: 100%;
+                // height: 100%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+
+                .any-rg {
+                    img {
+                        width: 175px;
+                        height: 160px;
+                        border-radius: 21px;
+                    }
+                }
+            }
+
+            .register_co2 {
+                background-color: var(--primary-color);
+                width: 500px;
+                height: 100%;
+
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                .contact_form {
+                    background-color: var(--primary-color);
+                    color: var(--bg-rgcl);
+                    padding: 30px;
+                    border-radius: 20px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-style: normal;
+                    width: 100%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    
+
+                    .form_headinng {
+                        padding: 0;
+
+                    }
+
+                    .form_r1 {
+                        width: 100%;
+                        .form_co1 {
+                            padding: 5px 0px;
+                        }
+
+                        .form-label {
+                            padding: 5px 0px;
+                        }
+
+                        .form-control {
+                            border: 1px solid color(--bg-border);
+                            border-radius: 18px;
+                            padding: 10px 0px;
+
+                        }
+
+                        .error {
+                            font-size: 10px;
+                            color: var(--text-color);
+                            text-align: center;
+
+                        }
+
+                    }
+
+                    .sub_btn_div{
+                        text-align: center;
+                        padding-top: 10px;
+                    .form_btn {
+                        background-color: var(--bs-orange);
+                        color: var(--bg-black);
+                        font-size: 18px;
+                        border: none;
+                        padding-top: 10px;
+
+                    }
+                    .form_btn:disabled{
+                        background-color: var(--bg-rgcolor);
+                    }
+                }
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,253 @@
+.track_con {
+    padding: 0;
+    background-image: url("../../../assets/shopImages/sliderimages1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .sticky_div {
+        position: relative;
+
+        .service_main_r1 {
+            .service_c1 {
+                background-color: var(--primary-color);
+                height: 150px;
+            }
+
+            .service_c2 {
+                background-color: var(--primary-color);
+                height: 400px;
+                width: 400px;
+                margin-top: -76px;
+                margin-left: 60px;
+                border-radius: 60px;
+                position: sticky;
+                top: 130px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                overflow: hidden;
+
+                img{
+
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .service_c3 {
+                margin-top: -305px;
+            }
+        }
+
+    }
+
+}
+
+.track_order_section {
+    margin-top: 80px;
+
+    .track_sec_con1 {
+        width: 100%;
+        height: 100%;
+
+
+        .fixed_div {
+
+            .track_col1 {
+
+                width: 400px;
+                border: 1px solid  rgb(244, 225, 118);
+                border-top: none;
+                border-bottom: none;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+               
+                margin-right: 20px;
+
+
+                .image {
+                    padding: 20px;
+
+                    img {
+                        width: 350px;
+                        height: 300px;
+                    }
+
+                }
+
+                .track_para {
+                    padding: 20px;
+                    font-size: 20px;
+
+                }
+            }
+
+            .track_col2 {
+
+                
+                .inner_track {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    border: 1px solid rgb(244, 225, 118);
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    
+
+                    .inner_trk1 {
+                        display: flex;
+                        padding: 20px;
+
+                        .lft_img {
+                            padding: 10px;
+
+                            img {
+                                width: 150px;
+                                height: 100px;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        .rht_tb {
+
+                            padding: 5px;
+
+                          .title{
+                            font-size: 18px;
+                            padding: 2px;
+                            
+                          }
+                          .title1{
+                            font-size: 16px;
+                            padding: 2px;
+                          }
+                          .order{
+                            font-size: 16px;
+                            padding: 2px;
+                            
+                          }
+                          .felx_bth{
+                            display: flex;
+                            
+                            .date{
+                                font-size: 15px;
+                                padding: 2px;
+                                color: rgb(200, 202, 200);
+    
+                              }
+                              .time{
+                                 color: rgb(200, 202, 200);
+                                 font-size: 10px;
+                                 padding: 2px;
+                                
+                              }
+                          }
+                         
+
+                            }
+                        }
+                    
+                    }
+
+                    .inner_trk2 {
+                        display: flex;
+                        margin: 20px;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        flex-direction: column;
+                        width: 95%;
+
+                        .three_div {
+                            display: flex;
+                            justify-content: space-between;
+
+                            z-index: 1;
+                            width: 100%;
+                            height: 100%;
+
+                            .first {
+                                .dot {
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 50px;
+                                    background-color: rgb(55, 243, 55);
+                                }
+                                .dot1{
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 50px;
+                                    background-color: rgb(200, 202, 200);
+                                }
+                                .dot2{
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 50px;
+                                    background-color: rgb(200, 202, 200);
+                                    margin-left: 20px;
+                                }
+
+                                .flex_bth{
+
+                                    span {
+                                        padding: 10px;
+                                        font-size: 18px;
+                                    }
+                                    .light{
+                                        font-size: 15px;
+                                        color: rgb(81, 86, 81);
+                                        // margin-left: 20px;
+                                    }
+                                }
+                              
+
+                               
+                            }
+
+                            .chnges_div{
+                                .flex_bth{
+                                .light{
+                                    font-size: 15px;
+                                    color: rgb(81, 86, 81);
+                                   
+                                }
+                            }
+                            }
+                        }
+
+                        .dash {
+                            background-color: var( --prymary-smoke-color);
+                            width: 505px;
+                            height: 2px;
+                            position: absolute;
+                            top: 8px;
+                            left: 30px;
+                        }
+                        .track_last1{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            align-items: center;
+                            height: 50px;
+                            .price_txt{
+                                font-size: 18px;
+                            }
+                            .value{
+                                font-size: 18px;
+                                color: rgb(200, 202, 200);
+                                margin-right: 30px;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+        }
+
+    }

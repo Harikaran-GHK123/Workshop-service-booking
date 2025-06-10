@@ -1,0 +1,43 @@
+<div class="ws_header">
+  <nav class="navbar navbar-expand-lg navbar-light nav_container">
+    <div class="container-fluid nav_card">
+      <div class="navbar_brand" routerLink="/home">
+        <img src="assets/images/company logo.jpeg" alt="">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menu_section" id="navbarNav">
+        <ul class="navbar-nav">
+          <div class="nav-changes">
+            <li class="nav-item">
+              <div class="main_icons" routerLink="/services" routerLinkActive="nav-active">
+                <div class="icons_svg"><img src="assets/images/service.svg" alt=""></div>
+                <a class="nav-link active" aria-current="page">services</a>
+              </div>
+            </li>
+          </div>
+          <li class="nav-item">
+            <div class="main_icons" routerLink="/about-us" routerLinkActive="nav-active">
+              <div class="icons_svg"><img src="assets/images/stroy.svg" alt=""></div>
+              <a class="nav-link">About</a>
+            </div>
+          </li>
+          <li class="nav-item" *ngIf="currenturl == '/home'">
+            <div class="main_icons" >
+              <div class="icons_svg"><img src="assets/images/contact.svg" alt=""></div>
+              <a class="nav-link" (click)="scrollToSection('contactUsForm')" >contact us</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="main_icons" routerLink="/book-services" routerLinkActive="nav-active">
+              <div class="icons_svg"><img src="assets/images/book services.svg" alt=""></div>
+              <a class="nav-link " tabindex="-1" aria-disabled="true">book services</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

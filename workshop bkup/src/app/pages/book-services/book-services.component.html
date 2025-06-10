@@ -1,0 +1,181 @@
+<div class="container_fluied book_serv_con" *ngIf="isuserregeister">
+
+    <div class="sticky_div">
+
+        <!-- <div class="stikiy_text">
+         Harikaran
+        </div> -->
+
+        <div class="row service_main_r1">
+            <div class="col-12  service_c1"></div>
+            <div class="col-12  service_c2 p-0">
+                <img src="../../../assets/shopImages/sliderimages1.jpeg" alt="">
+            </div>
+            <div class="col-12  service_c3">
+                <div class="service_img">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="whole_container">
+        <div class="row book_serv_r1">
+            <div class="col-6 book_serv_c1">
+                <div class="inner_book_rlh">
+
+                    <img src="../../../assets/shopImages/engineoilservice.jpeg" alt="">
+                    <div class="sml_book">
+                        The fuel system delivers fuel to the engine. Older bikes may use carburetors to mix air and fuel, while modern motorcycles mostly employ electronic fuel injection (EFI) systems for precise fuel delivery. The ignition system includes a spark plug and controls the timing of the spark to ignite the air-fuel mixture.
+                    </div>
+                    <div class="para_book">
+                        To ensure smooth operation and longevity, the engine has a lubrication system with an oil pump circulating oil to lubricate moving parts. An oil filter removes impurities from the oil. The electrical system includes a battery for starting and powering lights and an alternator/generator for charging the battery and supplying power when the engine is running.
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-5 book_serv_c2">
+
+                <div class="inner_forms">
+
+                    <form class="col-5 col-12 contact_form " [formGroup]="bookserviceform"
+                        (ngSubmit)="getbookservform()">
+                        <div class="form_headinng">
+                            Make your booking
+                        </div>
+                        <div class="row form_r1">
+                            <div class="mb-3 col-6 form_co1">
+                                <label for="formfirstname" class="form-label">first name*</label>
+                                <input type="text" class="form-control" id="formfirstname" formControlName="first_name">
+                                <div class="error"
+                                    *ngIf="bookserviceform.get('first_name')?.invalid && (bookserviceform.get('first_name')?.touched || bookserviceform.get('first_name')?.dirty)">
+                                    Enter your first name
+                                </div>
+                            </div>
+                            <div class="mb-3 col-6 form_co1">
+                                <label for="formlastname" class="form-label">last name*</label>
+                                <input type="text" class="form-control" id="formlastname" formControlName="last_name">
+                                <div class="error"
+                                    *ngIf="bookserviceform.get('last_name')?.invalid && (bookserviceform.get('last_name')?.touched || bookserviceform.get('last_name')?.dirty)">
+                                    Enter your last name
+                                </div>
+                            </div>
+
+                            <div class="mb-3 col-12 form_co1">
+                                <label for="formemail" class="form-label">Type the expected service(shortly)</label>
+                                <input type="text" class="form-control" id="formemail" formControlName="shortly">
+                                <div class="error"
+                                    *ngIf="bookserviceform.get('shortly')?.invalid && (bookserviceform.get('shortly')?.touched || bookserviceform.get('shortly')?.dirty)">
+                                    Enter your valid email
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="mb-3 col-12 form_co1">
+                                <label for="formemail" class="form-label">Type the expected service(briefly)</label>
+                                <textarea class="form-control" id="formemail" formControlName="briefly"></textarea>
+                                <div class="error"
+                                    *ngIf="bookserviceform.get('briefly')?.invalid && (bookserviceform.get('briefly')?.touched || bookserviceform.get('briefly')?.dirty)">
+                                    Enter your valid email
+                                </div>
+                            </div>
+
+                            <div class="mb-3 col-12 form_co1">
+                                <label for="formemail" class="form-label ">Additional services (optional)</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Oil check</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Air check</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Break check</label>
+                                </div>
+
+
+                            </div>
+
+                            <div class="mb-3 col-12 form_co1">
+                                <label for="formemail" class="form-label">Address</label>
+                                <textarea class="form-control" id="formemail" formControlName="text"></textarea>
+                                <div class="error"
+                                    *ngIf="bookserviceform.get('text')?.invalid && (bookserviceform.get('text')?.touched || bookserviceform.get('text')?.dirty)">
+                                    Enter your valid email
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3 col-12 form_co1">
+                                <label for="formmessage" class="form-label">Upload images for expected services</label>
+                                <input type="file" accept="image/*" class="form-control" id="formmessage"
+                                    (change)="onFileChange($event)">
+                                <div class="error"
+                                    *ngIf="bookserviceform.get('Upload')?.invalid && (bookserviceform.get('Upload')?.touched || bookserviceform.get('Upload')?.dirty)">
+                                    Enter your vaild password
+                                </div>
+                            </div>
+
+                            <button type="submit" [disabled]="bookserviceform.invalid"
+                                class="btn btn-primary w-50 m-auto form_btn my-3" data-bs-toggle="modal"
+                                data-bs-target="#bookserpopdown">Submit</button>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="error_msg" *ngIf="!isuserregeister">
+
+    <div class="error_txt mb-3 fw-500 " >
+        Please Sing up to continue book serviece.
+    </div>
+
+
+    <button type="button" class="btn btn-primary" routerLink="/register">Register</button>
+
+</div>
+
+<!-- pop -->
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="bookserpopdown" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">SUCCESSFULL
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Your Booking is successfull submitted <br>
+                If you want to track your service, click the button go to Track Service page.
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-primary bg-btn-praimary" data-bs-dismiss="modal"
+                    routerLink="/track-orders">DONE</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- pop -->
